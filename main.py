@@ -54,7 +54,9 @@ def main():
             return f"I'm sorry there was a problem, I can't answer that question.\nError: {e}"
         return response.validated_output
 
-    gr.ChatInterface(random_response).launch()
+    gr.ChatInterface(random_response).launch(share=True)
+    # gr.ChatInterface(random_response).launch()
+
 
 if __name__ == "__main__":
     main()
